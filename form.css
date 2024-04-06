@@ -1,0 +1,83 @@
+:root{
+    --background-color: #1A1A1A;
+   --font-color: #FFFFFF80;
+     --input-color: #333333;
+    --accent-color: #00BFFF;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    padding: 100px;
+}
+
+.form{
+    color: var(--font-color);
+    width: 450px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+
+}
+
+.title{
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.name_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+input{
+    background-color: var(--input-color);
+    padding: 13px 10px;
+    border-radius: 10px;
+
+}
+
+.name_box input{
+  width: 100%;
+}
+.input{
+    width: 100%;
+}
+
+label{
+    position: relative;
+}
+span{
+    color: var(--font-color);
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    transition: 0.3s ease;
+}
+
+form label input:focus + span{
+  top: -7px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
